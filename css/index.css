@@ -1,0 +1,498 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Fira Sans Condensed", sans-serif;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Hind Madurai", sans-serif;
+
+}
+
+body {
+  background-color: #f9f3ee;
+  flex-direction: row;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9ceee;
+  background-size: contain;
+  background-position: center center;
+  flex-wrap: wrap;
+  max-width: 100%;
+
+}
+
+footer {
+  background-color: #ccf3ee;
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 10PX;
+
+  max-width: 100%;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-left: 10px;
+}
+
+.menu__footer {
+  display: flex;
+  list-style-type: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  flex-wrap: wrap;
+  gap: 5px;
+ 
+}
+
+.Menu__footer__prod {
+  list-style: none;
+  font-size: small;
+
+}
+
+.menu__list__prod {
+  text-decoration: none;
+  color: gray;
+
+}
+
+.menu__link__footer {
+  text-decoration: none;
+  color: gray;
+}
+
+picture {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: grey;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bolder;
+  width: fit-content;
+  gap: 30px;
+
+}
+
+.menu__link {
+  text-decoration: none;
+  color: white;
+}
+
+.menu__menu__list {
+  list-style-type: none;
+}
+
+.nav__list__prod {
+  text-decoration: none;
+  color: white
+}
+
+/*PRUEBA MENU DESPLEGABLE*/
+.menu__desplegable ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu__desplegable a {
+  display: block;
+  background-color: grey;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu__desplegable a:hover {
+  background-color: #97C4B8;
+}
+
+.menu__desplegable ul li ul {
+  display: none;
+}
+
+.menu__desplegable ul li a:hover+ul,
+.menu__desplegable ul li ul:hover {
+  display: block;
+}
+
+/* NOVEDADES */
+.card__section {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  padding-top: 100px;
+  flex-wrap: wrap;
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 150px;
+  background-color: white;
+  margin: auto;
+  text-align: center;
+  font-family: "Fira Sans Condensed", sans-serif;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.card__descripcion {
+  font-family: "Hind Madurai", sans-serif;
+  color: #97C4B8;
+}
+
+.card__precio {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #97C4B8;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/*PRODUCTOS*/
+main {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-items: center;
+  padding-top: 200px;
+
+}
+
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: auto;
+  gap: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.products__link {
+  font-family: "Nunito Sans", sans-serif;
+  color: crimson;
+  font-weight: bolder;
+  padding-left: 50px;
+  font-size: x-large;
+  text-decoration: none;
+  translate: 10x;
+}
+
+.products__menu {
+  background-color: #97c4b8;
+  background-size: 100px;
+}
+
+/*QUIENES SOMOS*/
+
+.presentacion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 60px;
+
+}
+
+.presentacion__imagen {
+  max-width: 40%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 50%;
+
+
+}
+
+.presentacion__parrafo {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: large;
+  width: 50%;
+}
+
+.presentacion__titulo {
+  padding-top: 20px;
+  padding-left: 20px;
+  color: gray;
+}
+
+/*CONTACTO*/
+.contacto__contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  height: 100vh;
+}
+
+.contacto__header {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+.formulario__contacto {
+  background-color: white;
+  width: 400px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.formulario__titulo {
+  font-size: 50px;
+  margin-bottom: 50px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: grey;
+}
+
+.contacto__container {
+  position: relative;
+  height: 45px;
+  width: 90%;
+  margin-bottom: 17px;
+}
+
+.formulario__box {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #DADCE0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+
+.formulario__label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: white;
+  color: #DADCE0;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.button__formulario {
+  display: block;
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: #97C4B8;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+
+}
+
+.button__formulario {
+  background-color: #97C4B8;
+  transform: translateY(-2px);
+}
+
+.formulario__box:focus + .formulario__label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: #97C4B8;
+
+}
+
+
+
+/*REGISTRATE*/
+.formulario__registro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: small;
+
+}
+
+.form {
+  background-color: white;
+  width: 400px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.titulo {
+  font-size: 50px;
+  margin-bottom: 50px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: grey;
+
+}
+
+.formulario__container {
+  position: relative;
+  height: 45px;
+  width: 90%;
+  margin-bottom: 17px;
+}
+
+.input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #DADCE0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+
+::placeholder {
+  color: transparent;
+
+}
+
+.label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: white;
+  color: #DADCE0;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.registro__boton {
+  display: block;
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: #97C4B8;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.registro__boton:hover {
+  background-color: #97C4B8;
+  transform: translateY(-2px);
+}
+
+.input:focus+.label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: #97C4B8;
+}
+
+.input:focus {
+  border: 2px solid #97C4B8;
+}
+
+.input:not(:placeholder-shown)+.label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/*TUTORIALES*/
+
+
+@media screen and (max-width:480px) {
+  header body main nav footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+
+  }
+
+  .products__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    width: auto;
+    gap: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
