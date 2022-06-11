@@ -10,7 +10,10 @@ h2 {
   display: flex;
   justify-content: center;
   padding-top: 15px;
+  
 }
+
+
 
 h3 {
   font-family: "Nunito Sans", sans-serif;
@@ -43,7 +46,6 @@ footer {
   text-decoration: none;
   list-style-type: none;
   padding-left: 10PX;
-
   max-width: 100%;
   position: relative;
 }
@@ -262,6 +264,8 @@ main {
   color: gray;
 }
 
+
+
 /*CONTACTO*/
 .contacto__contenedor {
   display: flex;
@@ -316,7 +320,7 @@ main {
   z-index: 1;
 }
 
-.formulario__label {
+label .formulario__label {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -342,12 +346,13 @@ main {
 
 }
 
-.button__formulario {
-  background-color: #97C4B8;
-  transform: translateY(-2px);
+.button__formulario:hover {
+  background-color: #F9F3EE;
+  transform: translateY(-3px);
+  color: black;
 }
 
-.formulario__box:focus + .formulario__label {
+.formulario__box:focus+.formulario__label {
   top: -7px;
   left: 3px;
   z-index: 10;
@@ -439,8 +444,9 @@ main {
 }
 
 .registro__boton:hover {
-  background-color: #97C4B8;
+  background-color: #F9F3EE;
   transform: translateY(-2px);
+  color: black;
 }
 
 .input:focus+.label {
