@@ -48,6 +48,8 @@ footer {
   padding-left: 10PX;
   max-width: 100%;
   position: relative;
+  display: block;
+  align-items: flex-end;
 }
 
 nav {
@@ -116,34 +118,6 @@ picture {
   color: white
 }
 
-/*PRUEBA MENU DESPLEGABLE*/
-.menu__desplegable ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.menu__desplegable a {
-  display: block;
-  background-color: grey;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.menu__desplegable a:hover {
-  background-color: #97C4B8;
-}
-
-.menu__desplegable ul li ul {
-  display: none;
-}
-
-.menu__desplegable ul li a:hover+ul,
-.menu__desplegable ul li ul:hover {
-  display: block;
-}
-
 /* NOVEDADES */
 .card__section {
   display: flex;
@@ -193,6 +167,17 @@ picture {
 .card button:hover {
   opacity: 0.7;
 }
+
+/*BOOSTRAP*/
+.carousel-inner img {
+  width: 400PX;
+  max-height: 460px;
+}
+
+.carousel-inner{
+height: ;
+}
+
 
 /*PRODUCTOS*/
 main {
