@@ -10,6 +10,7 @@ h2 {
   display: flex;
   justify-content: center;
   padding-top: 15px;
+  font-size: xx-large;
   
 }
 
@@ -129,7 +130,7 @@ picture {
 
 }
 
-.card {
+.card__index__news {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 150px;
   background-color: white;
@@ -150,7 +151,7 @@ picture {
   font-size: 22px;
 }
 
-.card button {
+.card__index__news button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -164,18 +165,18 @@ picture {
   font-weight: bold;
 }
 
-.card button:hover {
+.card__index__news button:hover {
   opacity: 0.7;
 }
 
 /*BOOSTRAP*/
 .carousel-inner img {
-  width: 400PX;
+  max-width: max-content 100px;;
   max-height: 460px;
 }
 
 .carousel-inner{
-height: ;
+height:auto ;
 }
 
 
@@ -216,41 +217,31 @@ main {
 }
 
 /*QUIENES SOMOS*/
-
-.presentacion {
+.card__conocenos {
+  padding-top: 50px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-top: 60px;
+  align-content:center;
+  justify-content: flex-end;
+} 
 
+.card__manos{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 20px;
+  
 }
-
-.presentacion__imagen {
-  max-width: 40%;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-  border-radius: 50%;
-
-
+.card{
+max-width: 50%;
+border-radius: 20px;
+display:flex;
+font-family: hind Madurai, sans-serif;
 }
-
-.presentacion__parrafo {
-  font-family: "Hind Madurai", sans-serif;
+.card-title {
+  font-family: nunito sans, sans-serif;
   font-weight: bold;
-  color: black;
-  font-size: large;
-  width: 50%;
+  font-size: x-large; ;
 }
-
-.presentacion__titulo {
-  padding-top: 20px;
-  padding-left: 20px;
-  color: gray;
-}
-
-
-
 /*CONTACTO*/
 .contacto__contenedor {
   display: flex;
