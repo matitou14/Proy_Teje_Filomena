@@ -171,7 +171,7 @@ picture {
 
 /*BOOSTRAP*/
 .carousel-inner img {
-  max-width: max-content 100px;;
+  max-width: max-content 100px;
   max-height: 460px;
 }
 
@@ -181,15 +181,6 @@ height:auto ;
 
 
 /*PRODUCTOS*/
-main {
-  display: flex;
-  align-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-items: center;
-  padding-top: 200px;
-
-}
 
 .products__grid {
   display: grid;
@@ -198,50 +189,67 @@ main {
   width: auto;
   gap: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
-}
-
-.products__link {
-  font-family: "Nunito Sans", sans-serif;
-  color: crimson;
-  font-weight: bolder;
-  padding-left: 50px;
-  font-size: x-large;
-  text-decoration: none;
-  translate: 10x;
-}
-
-.products__menu {
-  background-color: #97c4b8;
-  background-size: 100px;
-}
-
-/*QUIENES SOMOS*/
-.card__conocenos {
-  padding-top: 50px;
-  display: flex;
-  align-content:center;
-  justify-content: flex-end;
-} 
-
-.card__manos{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  border-radius: 20px;
   
 }
-.card{
-max-width: 50%;
-border-radius: 20px;
-display:flex;
-font-family: hind Madurai, sans-serif;
+
+.products__link{
+  height: 400px;
+  width: 400px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  grid-template-areas: "main";
+  overflow:hidden;
+  cursor: pointer;
+  text-decoration: none;
+  background-color:cornflowerblue;
 }
-.card-title {
-  font-family: nunito sans, sans-serif;
-  font-weight: bold;
-  font-size: x-large; ;
+
+.products__link >*{
+  grid-area: main;
 }
+.products__img{
+  height:max-content;
+  width: max-content;
+}
+
+.products__link > .products__img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  transition: transform 400ms; filter: 400ms ;
+}
+.products__link > .products__text {
+  opacity: 0;
+  color: white;
+  font-size: 1.8em;
+  transition: opacity 400ms; transform: 400ms;
+}
+.products__link:is(:hover, :focus) > .products__img {
+  transform: scale(1.1);
+  filter: brightness(0.4);
+}
+.products__link:is(:hover, :focus) > .products__text {
+  transform: scale(1.2);
+  opacity: 1;
+  
+}
+
+main {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-items: center;
+  max-width:  100%;
+  max-height: 100%;
+}
+
+
+/*fin prueba*/
+
+
+
 /*CONTACTO*/
 .contacto__contenedor {
   display: flex;
