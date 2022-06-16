@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +18,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500;800&display=swap"
         rel="stylesheet">
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Contacto Teje Filomena</title>
 </head>
 
@@ -31,58 +29,37 @@
         </picture>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"/a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                  <a class="nav-link" href="./productos.html">Productos</a>
-                  <a class="nav-link" href="./quienes somos.html">Quienes somos?</a>
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
-                  <a class="nav-link" href="./aprende-crochet.html">Tutoriales</a>
-                
-                </div>
-              </div>
-            </div>
-          </nav>
-    </header>
-        <h2 class="contacto__header">Deja tu comentario/consulta y a la brevedad te respondemos</h2>
-        <div class="contacto__contenedor">
-            <form class="formulario__contacto" action="" method="post" enctype="multipart/form-data">
-                <h2 class="formulario__titulo">Contactanos</h2>
-                <div class="contacto__container">
-                    <label class="formulario__label__mail" for="Correo"> Email </label> </label>
-                    <input class="formulario__box" type="email" name="Correo" placeholder="a">
-                </div>
-                <br>
-                <br>
-                <div class="contacto__container">
-                    <label class="formulario__label" for="Nro de telefono"> Numero de telefono </label>
-                    <input class="formulario__box" type="tel" name="Nro de telefono" placeholder="a">
-                </div>
-                <br>
-                <br>
-                <div class= "contacto__container" > <textarea class="formulario__box__text" name="Contacto" id="" cols="40" rows=5
-                        placeholder="a"></textarea> 
-                </div>
-                <br>
-                <input class="button__formulario" type="submit" name="Enviar" id="">
-                <input class="button__formulario" type="reset" name="Borrar Formulario">
-            </form>
-        </div>
-    </body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+                <a class="navbar-brand" href="#" /a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                            <a class="nav-link" href="./quienes somos.html">Quienes somos?</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                            <a class="nav-link" href="./aprende-crochet.html">Tutoriales</a>
 
+                        </div>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <h2 class="contacto__header">Deja tu comentario/consulta y a la brevedad te respondemos</h2>
+    <div class="form__contact" >
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@server.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Deja tu comentario</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </div>
     <footer>
         <h3>Categorias</h3>
         <ul class="menu__footer">
@@ -99,20 +76,22 @@
                         <a class="menu__list__prod" href="./amigurumis.html">Amigurumis</a>
                     </li>
                     <li>
-                     <a class="menu__list__prod" href="./letras.html">Letras</a>
+                        <a class="menu__list__prod" href="./letras.html">Letras</a>
                     </li>
                     <li>
                         <a class="menu__list__prod" href="./ropa.html"> Ropa</a>
                     </li>
             </li>
         </ul>
-            </li>
-            <li class="menu__nav">
-                <a class="menu__link__footer" href="./quienes somos.html">Conocenos</a>
-            </li>
+        </li>
+        <li class="menu__nav">
+            <a class="menu__link__footer" href="./quienes somos.html">Conocenos</a>
+        </li>
         </ul>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
