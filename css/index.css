@@ -1,9 +1,11 @@
+/*NORMALIZE*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
+/*FIN NORMALIZE*/
+/*INICIO INDEX*/
 h2 {
   font-family: "Fira Sans Condensed", sans-serif;
   color: gray;
@@ -49,7 +51,7 @@ footer {
   padding-left: 10PX;
   max-width: 100%;
   position: relative;
-  display: block;
+  display: flex;
   align-items: flex-end;
 }
 
@@ -118,7 +120,7 @@ picture {
   text-decoration: none;
   color: white
 }
-
+/*FIN INDEX*/
 /* NOVEDADES */
 .card__section {
   display: flex;
@@ -128,6 +130,11 @@ picture {
   padding-top: 100px;
   flex-wrap: wrap;
 
+}
+.card__index {
+  display: grid;
+  
+  
 }
 
 .card__index__news {
@@ -168,7 +175,7 @@ picture {
 .card__index__news button:hover {
   opacity: 0.7;
 }
-
+/*FIN NOVEDADES*/
 /*BOOSTRAP*/
 .carousel-inner img {
   max-width: max-content 100px;
@@ -178,9 +185,10 @@ picture {
 .carousel-inner{
 height:auto ;
 }
+/*FIN BOOSTRAP*/
+/*FIN INDEX*/
 
-
-/*PRODUCTOS*/
+/* INICIO PRODUCTOS*/
 
 .products__grid {
   display: grid;
@@ -189,7 +197,7 @@ height:auto ;
   width: auto;
   gap: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  
+
 }
 
 .products__link{
@@ -243,14 +251,25 @@ main {
   justify-items: center;
   max-width:  100%;
   max-height: 100%;
+  padding-top: 50px;
 }
 
+.card__aside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width:  100%;
+  max-height: 100%;
+  padding-top: 50px;
+  flex-basis: auto;
+  position: absolute;
+  right: 75%;
+}
+/*FIN PRODUCTOS*/
 
-/*fin prueba*/
+/* INICIO CONTACTO*/
 
-
-
-/*CONTACTO*/
 .contacto__contenedor {
   display: flex;
   justify-content: center;
@@ -346,9 +365,9 @@ label .formulario__label {
 
 }
 
+/*FIN CONTACTO*/
 
-
-/*REGISTRATE*/
+/* INICIO REGISTRATE*/
 .formulario__registro {
   display: flex;
   justify-content: center;
@@ -453,36 +472,21 @@ label .formulario__label {
   font-size: 14px;
   font-weight: 600;
 }
+/*FIN REGISTRATE*/
 
-/*TUTORIALES*/
+/* INICIO TUTORIALES*/
 
 
-@media screen and (max-width:480px) {
-  header body main nav footer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+  
+  /*FIN TUTORIALES*/
+  
+  /* MEDIA QUERIES*/
 
-  .presentacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 60px;
-
-  }
-
-  .products__grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    width: auto;
-    gap: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  iframe {
-    width: 100%;
-    height: 100%;
-  }
+  @media screen and (max-width:480px) {
+    header body main nav footer {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
 }
+
