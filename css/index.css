@@ -52,6 +52,156 @@ nav {
   padding-left: 10px;
 }
 
+.header__elements {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  gap: 30px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+}
+
+
+.header__icon {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  max-width: 100%;
+  height: 30px;
+
+}
+
+.header__icon img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.header__icon:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+/* PRUEBA LOGO*/
+
+.column#zoomIn img {
+  -webkit-transform: scale(0.5);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.column#zoomIn:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+}
+
+.img__logo {
+  max-width: 100%;
+  max-height: 50%;
+}
+
+/* FIN LOGO*/
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: grey;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bolder;
+  width: fit-content;
+  gap: 30px;
+
+}
+
+.menu__link {
+  text-decoration: none;
+  color: white;
+}
+
+.menu__menu__list {
+  list-style-type: none;
+}
+
+.nav__list__prod {
+  text-decoration: none;
+  color: white
+}
+
+/*BOOSTRAP*/
+.carousel-inner img {
+  width: 100px;
+  max-height: 460px;
+}
+
+.carousel-inner {
+  height: auto;
+}
+
+/*FIN BOOSTRAP*/
+
+/* NOVEDADES */
+.card__section {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  padding-top: 100px;
+  flex-wrap: wrap;
+
+}
+
+.card__index {
+  display: grid;
+
+
+}
+
+.card__index__news {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 150px;
+  background-color: white;
+  margin: auto;
+  text-align: center;
+  font-family: "Fira Sans Condensed", sans-serif;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.card__descripcion {
+  font-family: "Hind Madurai", sans-serif;
+  color: #97C4B8;
+}
+
+.card__precio {
+  color: grey;
+  font-size: 22px;
+}
+
+.card__index__news button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #97C4B8;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+}
+
+.card__index__news button:hover {
+  opacity: 0.7;
+}
 /*FOOTER*/
 .site-footer {
   background-color: #CCF3EE;
@@ -204,166 +354,8 @@ nav {
   background-color: #ea4c89
 }
 
-@media (max-width:767px) {
-  .social-icons li.title {
-    display: block;
-    margin-right: 0;
-    font-weight: 600
-  }
-}
 
 /* FIN FOOTER*/
-
-.header__elements {
-  display: flex;
-  justify-content: flex-end;
-  align-items: stretch;
-  gap: 30px;
-  padding-right: 40px;
-  padding-bottom: 10px;
-}
-
-
-.header__icon {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  max-width: 100%;
-  height: 30px;
-
-}
-
-.header__icon img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-.header__icon:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
-/* PRUEBA LOGO*/
-
-.column#zoomIn img {
-  -webkit-transform: scale(0.5);
-  transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-.column#zoomIn:hover img {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-figure {
-  display: flex;
-  justify-content: center;
-}
-
-.img__logo {
-  max-width: 100%;
-  max-height: 50%;
-}
-
-/* FIN PRUEBA LOGO*/
-
-.menu {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: grey;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: bolder;
-  width: fit-content;
-  gap: 30px;
-
-}
-
-.menu__link {
-  text-decoration: none;
-  color: white;
-}
-
-.menu__menu__list {
-  list-style-type: none;
-}
-
-.nav__list__prod {
-  text-decoration: none;
-  color: white
-}
-
-/*BOOSTRAP*/
-.carousel-inner img {
-  width: 100px;
-  max-height: 460px;
-}
-
-.carousel-inner {
-  height: auto;
-}
-
-/*FIN BOOSTRAP*/
-
-/* NOVEDADES */
-.card__section {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  justify-content: center;
-  padding-top: 100px;
-  flex-wrap: wrap;
-
-}
-
-.card__index {
-  display: grid;
-
-
-}
-
-.card__index__news {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 150px;
-  background-color: white;
-  margin: auto;
-  text-align: center;
-  font-family: "Fira Sans Condensed", sans-serif;
-  gap: 15px;
-  flex-direction: column;
-}
-
-.card__descripcion {
-  font-family: "Hind Madurai", sans-serif;
-  color: #97C4B8;
-}
-
-.card__precio {
-  color: grey;
-  font-size: 22px;
-}
-
-.card__index__news button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #97C4B8;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: bold;
-}
-
-.card__index__news button:hover {
-  opacity: 0.7;
-}
 
 /*FIN INDEX*/
 
@@ -670,6 +662,7 @@ label .formulario__label {
   }
 
 }
+
 @media (max-width:991px) {
   .site-footer [class^=col-] {
     margin-bottom: 30px
@@ -684,5 +677,13 @@ label .formulario__label {
   .site-footer .copyright-text,
   .site-footer .social-icons {
     text-align: center
+  }
+}
+
+@media (max-width:767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600
   }
 }
