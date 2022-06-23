@@ -9,7 +9,7 @@
   margin: 0;
   box-sizing: border-box; }
 
-h2 {
+h2 h3 h4 {
   font-family: "Fira Sans Condensed", sans-serif;
   color: grey;
   display: flex;
@@ -436,9 +436,9 @@ label .formulario__label {
   box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2); }
 
 .titulo {
-  font-size: 50px;
+  font-size: 4.6em;
   margin-bottom: 50px;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   color: grey; }
 
 .formulario__container {

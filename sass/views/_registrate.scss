@@ -18,10 +18,10 @@
   }
   
   .titulo {
-    font-size: 50px;
+    font-size: $text-large;
     margin-bottom: 50px;
-    font-family: 'Fira Sans Condensed', sans-serif;
-    color: grey;
+    font-family: $font-title;
+    color: $color-titles;
   
   }
   
