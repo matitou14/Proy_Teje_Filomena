@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    font-family: $font-title;
+    color: $color-titles;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-size: $text-medium;
+  
+  }
+  
+  h3 {
+    font-family: $font-subtitle;
+    font-weight: bold;
+  }
+  
+  p {
+    font-family: $font-general;
+  
+  }
+  
+  body {
+    background-color: $color-background;
+    flex-direction: row;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-header;
+    background-size: contain;
+    background-position: center center;
+    flex-wrap: wrap;
+    max-width: 100%;
+  
+  }
