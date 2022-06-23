@@ -3,14 +3,18 @@
     margin: 0;
     box-sizing: border-box;
   }
-  
-  h2 h3 h4 {
+  h1{
+    font-family: $font-title;
+    color: $color-titles;
+  }
+   h2 {
     font-family: $font-title;
     color: $color-titles;
     display: flex;
     justify-content: center;
     padding-top: 15px;
     font-size: $text-medium;
+    font-weight: bold;
   
   }
   
@@ -18,12 +22,19 @@
     font-family: $font-subtitle;
     font-weight: bold;
   }
-  
+  h5 h6 {
+    font-family: $font-subtitle;
+    font-weight: bold;
+  }
   p {
     font-family: $font-general;
   
   }
-  
+  a {
+    font-family: $font-general;
+    color: $color-titles;
+    text-decoration: none;
+  }
   body {
     background-color: $color-background;
     flex-direction: row;

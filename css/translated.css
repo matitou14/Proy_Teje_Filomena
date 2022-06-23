@@ -9,20 +9,34 @@
   margin: 0;
   box-sizing: border-box; }
 
-h2 h3 h4 {
+h1 {
+  font-family: "Fira Sans Condensed", sans-serif;
+  color: grey; }
+
+h2 {
   font-family: "Fira Sans Condensed", sans-serif;
   color: grey;
   display: flex;
   justify-content: center;
   padding-top: 15px;
-  font-size: 2.4em; }
+  font-size: 2.4em;
+  font-weight: bold; }
 
 h3 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: bold; }
 
+h5 h6 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold; }
+
 p {
   font-family: "Hind Madurai", sans-serif; }
+
+a {
+  font-family: "Hind Madurai", sans-serif;
+  color: grey;
+  text-decoration: none; }
 
 body {
   background-color: #F9F3EE;
