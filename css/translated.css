@@ -265,7 +265,7 @@ figure {
   margin: auto;
   text-align: center;
   font-family: "Fira Sans Condensed", sans-serif;
-  gap: 15px;
+  gap: 1rem;
   flex-direction: column; }
   .card__index__news button {
     border: none;

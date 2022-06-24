@@ -23,8 +23,8 @@
 	background-color: white;
 	margin: auto;
 	text-align: center;
-	font-family: "Fira Sans Condensed", sans-serif;
-	gap: 15px;
+	font-family: $font-title;
+	gap: $spacing-xsmall;
 	flex-direction: column;
 	button {
 		border: none;
@@ -36,7 +36,7 @@
 		cursor: pointer;
 		width: 100%;
 		font-size: 18px;
-		font-family: "Nunito Sans", sans-serif;
+		font-family: $font-subtitle;
 		font-weight: bold;
 		&:hover {
 			opacity: 0.7;
