@@ -354,8 +354,8 @@ p {
 
 /* BLOG */
 .blog {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 6rem;
   align-items: center;
   justify-content: flex-end;
@@ -366,17 +366,20 @@ p {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  display: flex; }
 
 .index__blog__info {
   flex: 1 1 50%;
   display: flex;
   flex-wrap: wrap;
   padding: 6rem;
-  gap: 2.4rem; }
+  gap: 2.4rem;
+  max-width: 100%; }
 
 .index__blog__titulo {
   display: flex;
+  flex-direction: column;
   padding-right: 400px;
   font-size: 2.4em;
   font-weight: bold;
@@ -396,6 +399,12 @@ p {
   color: #111;
   display: flex;
   align-self: flex-end; }
+
+@media screen and (max-width: 480px) {
+  .blog .index__blog__img {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%; } }
 
 /* PRODUCTOS */
 .products__main {
