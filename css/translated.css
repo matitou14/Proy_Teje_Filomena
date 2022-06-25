@@ -247,48 +247,161 @@ figure {
     width: 100px;
     max-height: 460px; }
 
-.card__section {
+/* NOVEDADES */
+.card__index__news {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 100%;
+  gap: 1rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); }
+
+.wrapper {
   display: flex;
   flex-direction: row;
-  gap: 15px;
   justify-content: center;
-  padding-top: 100px;
-  flex-wrap: wrap; }
-
-.card__index {
-  display: grid; }
-
-.card__index__news {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 150px;
-  background-color: white;
-  margin: auto;
-  text-align: center;
+  align-items: center;
   font-family: "Fira Sans Condensed", sans-serif;
-  gap: 1rem;
-  flex-direction: column; }
-  .card__index__news button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #97C4B8;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-    font-family: "Nunito Sans", sans-serif;
+  max-width: fit-content; }
+
+.outer {
+  position: relative;
+  background: #fff;
+  height: 350px;
+  width: 550px;
+  overflow: hidden;
+  display: flex;
+  align-items: center; }
+
+.card__img__index {
+  position: absolute;
+  top: 25px;
+  right: -5px;
+  z-index: 0;
+  animation-delay: 0.5s; }
+
+.card__img__index__ropa {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  z-index: 0;
+  animation-delay: 0.5s; }
+
+.content {
+  animation-delay: 0.3s;
+  position: absolute;
+  left: 20px;
+  z-index: 3; }
+
+h1 {
+  color: grey; }
+
+p {
+  width: 280px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #020202;
+  margin: 20px 0; }
+
+.bg {
+  display: inline-block;
+  color: #fff;
+  background: cornflowerblue;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: .7em; }
+
+.button {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 10px; }
+  .button a {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    font-size: 11px;
+    color: #111;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #aaa;
     font-weight: bold; }
-    .card__index__news button:hover {
-      opacity: 0.7; }
+    .button a:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -10px;
+      width: 0%;
+      background: #111;
+      height: 100%;
+      z-index: -1;
+      transition: width 0.3s ease-in-out;
+      transform: skew(-25deg);
+      transform-origin: right; }
+    .button a:hover {
+      color: #fff;
+      transition: all 0.5s ease; }
+      .button a:hover:after {
+        width: 150%;
+        left: -10px;
+        transform-origin: left; }
+    .button a:nth-of-type(1) {
+      border-radius: 50px 0 0 50px;
+      border-right: none; }
+    .button a:nth-of-type(2) {
+      border-radius: 0px 50px 50px 0; }
 
-.card__descripcion {
+.cart-icon {
+  padding-right: 8px; }
+
+/* BLOG */
+.blog {
+  display: flex;
+  flex-direction: row;
+  padding: 6rem;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 100%; }
+
+.index__blog__img {
+  flex: 1 1 50%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.index__blog__info {
+  flex: 1 1 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6rem;
+  gap: 2.4rem; }
+
+.index__blog__titulo {
+  display: flex;
+  padding-right: 400px;
+  font-size: 2.4em;
+  font-weight: bold;
+  color: #111;
+  align-items: center; }
+
+.index__blog__p {
+  font-size: 0.9em;
   font-family: "Hind Madurai", sans-serif;
-  color: #97C4B8; }
+  color: #111;
+  display: flex; }
 
-.card__precio {
-  color: grey;
-  font-size: 22px; }
+.index__blog__link {
+  font-size: 0.9em;
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: bold;
+  color: #111;
+  display: flex;
+  align-self: flex-end; }
+
+@media screen and (max-width: 480px) {
+  .blog {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; } }
 
 /* PRODUCTOS */
 .products__main {
