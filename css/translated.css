@@ -373,7 +373,7 @@ p {
   flex: 1 1 50%;
   display: flex;
   flex-wrap: wrap;
-  padding: 6rem;
+  padding: 2.4rem;
   gap: 2.4rem;
   max-width: 100%; }
 
@@ -399,12 +399,6 @@ p {
   color: #111;
   display: flex;
   align-self: flex-end; }
-
-@media screen and (max-width: 480px) {
-  .blog .index__blog__img {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%; } }
 
 /* PRODUCTOS */
 .products__main {
