@@ -1,1 +1,55 @@
 /* AMIGURUMIS */
+.grid__container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /*grid-template-rows: repeat(12, 1fr);*/
+    grid-gap: $spacing-small;
+    align-content: center;
+    justify-items: flex-start;
+    grid-template-areas: 1.2;
+
+}  
+.card__section__amigu{
+
+       
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    align-items: center;
+    
+     }
+.card__img__amigu{
+ max-width: 100%;
+ &:hover {
+    transform: scale(1.1);
+ }
+}
+.card-body{
+}
+.card__title{
+ @include font ($font-subtitle, $text-medium);
+}
+.card-text{
+    @include font ($font-subtitle, $text-xxsmall);
+}
+.card__btn{
+     @include font ($font-general, $text-xxsmall);
+    font-weight:bold;
+    display: block;
+	margin-left: auto;
+	padding: 15px 30px;
+	border: none;
+	background-color: #97C4B8;
+	color: white;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-top: 30px;
+	&:hover {
+		background-color: #F9F3EE;
+		transform: translateY(-3px);
+		color: black;
+    }
+}

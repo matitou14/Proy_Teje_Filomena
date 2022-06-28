@@ -1,0 +1,11 @@
+/* MIXINS */
+@mixin sizes($size) {
+  width: $size;
+  height: $size;
+}
+/*Uso de mixin size en .products__link*/
+@mixin font ($ff,$fs) {
+  font-family: $ff;
+  font-size: $fs;
+}
+/*Uso de mixin font en .products__link*/

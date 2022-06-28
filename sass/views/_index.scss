@@ -59,12 +59,13 @@
 h1 {
 	color: $color-titles;
 }
-p {
+.card__p {
+	@include font ($font-subtitle, $text-xxsmall);
 	width: 280px;
-	font-size: 13px;
 	line-height: 1.4;
 	color: rgb(2, 2, 2);
 	margin: 20px 0;
+	font-weight: bold;
 }
 .bg {
 	display: inline-block;
@@ -157,14 +158,12 @@ p {
 	align-items: center;
 }
 .index__blog__p {
-	font-size: $text-xxsmall;
-	font-family: $font-general;
+	@include font ($font-general, $text-xxsmall);
 	color: #111;
 	display: flex;
 }
 .index__blog__link {
-	font-size: $text-xxsmall;
-	font-family: $font-general;
+	@include font ($font-general, $text-xxsmall);
 	font-weight: bold;
 	color: #111;
 	display: flex;

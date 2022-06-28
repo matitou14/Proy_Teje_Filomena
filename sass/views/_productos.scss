@@ -1,70 +1,56 @@
-/* PRODUCTOS */ 
 .products__main {
-    display: flex;
-    flex-wrap: wrap;
-    grid-gap: 20px;
-    margin: 0 auto;
-    justify-items: center;
-    max-width: fit-content;
-  }
-  
-  .products__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    max-width: auto;
-    gap: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  
-  }
-  
-  .products__link {
-    height: 400px;
-    width: 400px;
-    border-radius: 4px;
-    margin: 0.5rem;
-    display: grid;
-    place-items: center;
-    grid-template-areas: "main";
-    overflow: hidden;
-    cursor: pointer;
-    text-decoration: none;
-    background-color: cornflowerblue;
-  }
-  
-  .products__link>* {
-    grid-area: main;
-  }
-  
-  .products__img {
-    height: max-content;
-    width: max-content;
-  }
-  
-  .products__link>.products__img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    transition: transform 400ms;
-    filter: 400ms;
-  }
-  
-  .products__link>.products__text {
-    opacity: 0;
-    color: white;
-    font-size: 1.8em;
-    transition: opacity 400ms;
-    transform: 400ms;
-  }
-  
-  .products__link:is(:hover, :focus)>.products__img {
-    transform: scale(1.1);
-    filter: brightness(0.4);
-  }
-  
-  .products__link:is(:hover, :focus)>.products__text {
-    transform: scale(1.2);
-    opacity: 1;
-  
-  }
-  
-  
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 20px;
+	margin: 0 auto;
+	justify-items: center;
+	max-width: fit-content;
+}
+.products__grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	max-width: auto;
+	gap: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.products__link {
+  @include sizes(400px);
+	border-radius: 4px;
+	margin: 0.5rem;
+	display: grid;
+	place-items: center;
+	grid-template-areas: "main";
+	overflow: hidden;
+	cursor: pointer;
+	text-decoration: none;
+	background-color: cornflowerblue;
+	& > * {
+		grid-area: main;
+	}
+	& > .products__img {
+		width: 100%;
+		aspect-ratio: 1/1;
+		transition: transform 400ms;
+		filter: 400ms;
+	}
+	& > .products__text {
+		opacity: 0;
+		color: white;
+		font-size: 1.8em;
+		transition: opacity 400ms;
+		transform: 400ms;
+	}
+}
+.products__img {
+	height: max-content;
+	width: max-content;
+}
+.products__link:is(:hover, :focus)>.products__img {
+	transform: scale(1.1);
+	filter: brightness(0.4);
+}
+.products__link:is(:hover, :focus)>.products__text {
+	transform: scale(1.2);
+	opacity: 1;
+}
