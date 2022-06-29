@@ -148,24 +148,3 @@ a{
 .index__gallery img:hover{
     flex:2;
 }
-
-@media (max-width: 480px){
-	.blog{
-		display: flex;
-		flex-wrap: wrap;
-		max-width: 100%;
-	}
-
-}
-
-@media (max-width: 1000px){
-    .cards__amigu .index__blog__info{ 
-        width: 45%;
-    }
-}
-@media (max-width: 480px){
-    .cards__amigu .index__blog__info{
-        width: 100%;
-    }
-    
-}
