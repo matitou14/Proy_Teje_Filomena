@@ -125,6 +125,30 @@ a{
 	display: flex;
 	align-self: flex-end;
 }
+
+/* GALLERY HOVER*/
+.index__gallery{
+    @include sizes(85vw, 60vmin);
+    display: flex;
+    gap:5px;   
+    align-items: center;
+    justify-content: center;
+    padding-left: $spacing-medium;
+
+}
+.index__gallery img{
+    max-width: 100%;
+    flex:1;
+    object-fit: cover;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 10px;
+}
+.index__gallery img:hover{
+    flex:2;
+}
+
 @media (max-width: 480px){
 	.blog{
 		display: flex;
