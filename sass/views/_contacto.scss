@@ -9,8 +9,8 @@
 .contacto__header {
 	font-family: "Hind Madurai", sans-serif;
 	font-weight: bold;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top:map-get($spacings, $spacing-xsmall); 
+	padding-bottom:map-get($spacings, $spacing-xsmall);
 }
 .formulario__contacto {
 	background-color: white;

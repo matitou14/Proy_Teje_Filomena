@@ -1,4 +1,5 @@
 /* VARIABLES */
+
 /* colors */
 $color-header: #F9CEEE;
 $color-footer: #CCF3EE;
@@ -6,16 +7,32 @@ $color-background: #F9F3EE;
 $color-text: black;
 $color-titles: grey;
 $color-buttons: #97C4B8;
+
 /* spacings */
 $spacing-xsmall: 1rem;
 $spacing-small: 1.2rem;
 $spacing-medium: 2.4rem;
 $spacing-large: 6rem;
 $spacing-vlarge: 15rem;
+
+$spacings:(
+spacing-xsmall: 1rem,
+spacing-small: 1.2rem,
+spacing-medium: 2.4rem,
+spacing-large: 6rem,
+spacing-vlarge: 15rem,
+);
+@each $key, $val in $spacings {
+    .#{$key} {
+        padding: $val;
+    }
+}
+/*maps en contacto 
 /* fonts family */
 $font-title: 'Fira Sans Condensed', sans-serif;
 $font-general: 'Hind Madurai', sans-serif;
 $font-subtitle: 'Nunito Sans', sans-serif;
+
 /* fonts size */
 $text-large:4.6em;
 $text-medium:2.4em;

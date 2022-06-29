@@ -11,7 +11,7 @@
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	max-width: auto;
-	gap: 10px;
+	gap: map map-get($spacings, $spacing-small);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .products__link {
@@ -24,7 +24,7 @@
 	overflow: hidden;
 	cursor: pointer;
 	text-decoration: none;
-	background-color: cornflowerblue;
+	background-color: $color-buttons;
 	& > * {
 		grid-area: main;
 	}

@@ -2,6 +2,22 @@
 /* VARIABLES */
 /* colors */
 /* spacings */
+.spacing-xsmall {
+  padding: 1rem; }
+
+.spacing-small {
+  padding: 1.2rem; }
+
+.spacing-medium {
+  padding: 2.4rem; }
+
+.spacing-large {
+  padding: 6rem; }
+
+.spacing-vlarge {
+  padding: 15rem; }
+
+/*maps en contacto 
 /* fonts family */
 /* fonts size */
 * {
@@ -393,7 +409,7 @@ a {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   max-width: auto;
-  gap: 10px;
+  gap: map;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
 .products__link {
@@ -407,7 +423,7 @@ a {
   overflow: hidden;
   cursor: pointer;
   text-decoration: none;
-  background-color: cornflowerblue; }
+  background-color: #97C4B8; }
   .products__link > * {
     grid-area: main; }
   .products__link > .products__img {
@@ -445,9 +461,7 @@ a {
 
 .contacto__header {
   font-family: "Hind Madurai", sans-serif;
-  font-weight: bold;
-  padding-top: 15px;
-  padding-bottom: 15px; }
+  font-weight: bold; }
 
 .formulario__contacto {
   background-color: white;
