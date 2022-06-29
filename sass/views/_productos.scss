@@ -15,7 +15,7 @@
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .products__link {
-  @include sizes(400px);
+  @include sizes(400px, 400px);
 	border-radius: 4px;
 	margin: 0.5rem;
 	display: grid;

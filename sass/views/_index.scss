@@ -23,6 +23,7 @@
 	align-items: center;
 	font-family: $font-title;
 	max-width: fit-content;
+	flex-wrap: wrap;
 	
 
 }
@@ -138,7 +139,7 @@ h1 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	display: flex;
+	
 }
 .index__blog__info {
 	flex: 1 1 50%;
@@ -151,6 +152,7 @@ h1 {
 .index__blog__titulo {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	padding-right: 400px;
 	font-size: $text-medium;
 	font-weight: bold;

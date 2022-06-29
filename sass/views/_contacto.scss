@@ -69,7 +69,8 @@ label {
 	}
 }
 .button__formulario {
-	display: block;
+	display: flex;
+  flex-direction: column;
 	margin-left: auto;
 	padding: 15px 30px;
 	border: none;

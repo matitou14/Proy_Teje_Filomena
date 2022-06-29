@@ -1,1 +1,6 @@
 /* GORROS */
+.btn {
+    @extend .button__formulario;
+    max-width: 50%;
+    margin: 0 auto;
+}

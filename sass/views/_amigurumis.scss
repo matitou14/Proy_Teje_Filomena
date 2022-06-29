@@ -1,55 +1,86 @@
 /* AMIGURUMIS */
-.grid__container{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /*grid-template-rows: repeat(12, 1fr);*/
-    grid-gap: $spacing-small;
-    align-content: center;
-    justify-items: flex-start;
-    grid-template-areas: 1.2;
-
-}  
-.card__section__amigu{
-
-       
+body {
+margin: 0;
+@include font($font-general, $text-xsmall);
 }
-.card{
+.title__card{
+    text-align: center;
+    font-size: $text-xsmall;
+    margin: 0;
+    padding-top: $spacing-medium;
+}
+a{
+    text-decoration: none;
+}
+.gallery__amigu{
     display: flex;
-    flex-direction: column;
-    border: solid;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
     align-items: center;
-    
-     }
-.card__img__amigu{
- max-width: 100%;
- &:hover {
-    transform: scale(1.1);
- }
+    margin:50px 0;
+
 }
-.card-body{
+.cards__amigu{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: .4s;
+    background: #f2f2f2;
+
 }
-.card__title{
- @include font ($font-subtitle, $text-medium);
+.cards__amigu:hover{
+    box-shadow: 0 03px 06px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.22);
+    transform: translate(0px, -8px);
 }
-.card-text{
-    @include font ($font-subtitle, $text-xxsmall);
-}
-.card__btn{
-     @include font ($font-general, $text-xxsmall);
-    font-weight:bold;
+.card__image{
+    @include sizes(200px,200px);
+    text-align: center;
+    margin: 0 auto;
     display: block;
-	margin-left: auto;
-	padding: 15px 30px;
-	border: none;
-	background-color: #97C4B8;
-	color: white;
-	border-radius: 6px;
-	cursor: pointer;
-	font-size: 16px;
-	margin-top: 30px;
-	&:hover {
-		background-color: #F9F3EE;
-		transform: translateY(-3px);
-		color: black;
+
+}
+p{
+  text-align: center;
+  padding-top: 0 8px;
+}
+h6 {
+    font-size: 26px;
+    text-align: center;
+    color:$color-text;
+}  
+.card__item__content{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.btn__amigu{
+    width: 100%;
+    @extend .button__formulario;
+    cursor: pointer;
+    margin: 0 auto;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+
+}
+
+@media (max-width: 1000px){
+    .cards__amigu{
+        width: 45%;
     }
 }
+@media (max-width: 480px){
+    .cards__amigu{
+        width: 100%;
+    }
+    
+}
+    
