@@ -233,117 +233,73 @@ figure {
     max-height: 460px; }
 
 /* NOVEDADES */
-.card__index__news {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  max-width: 100%;
-  gap: 1rem;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); }
+.title__card {
+  text-align: center;
+  font-size: 1.4em;
+  margin: 0;
+  padding-top: 2.4rem; }
 
-.wrapper {
+a {
+  text-decoration: none; }
+
+.gallery__amigu {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
   justify-content: center;
   align-items: center;
-  font-family: "Fira Sans Condensed", sans-serif;
-  max-width: fit-content;
-  flex-wrap: wrap; }
+  margin: 50px 0; }
 
-.outer {
-  position: relative;
-  background: #fff;
-  height: 350px;
-  width: 550px;
-  overflow: hidden;
-  display: flex;
-  align-items: center; }
+.cards__amigu {
+  width: 20%;
+  margin: 15px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: .4s;
+  background: #f2f2f2; }
 
-.card__img__index {
-  position: absolute;
-  top: 25px;
-  right: -5px;
-  z-index: 0;
-  animation-delay: 0.5s; }
+.cards__amigu:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.22);
+  transform: translate(0px, -8px); }
 
-.card__img__index__ropa {
-  position: absolute;
-  top: -5px;
-  right: 5px;
-  z-index: 0;
-  animation-delay: 0.5s; }
-
-.content {
-  animation-delay: 0.3s;
-  position: absolute;
-  left: 20px;
-  z-index: 3; }
-
-h1 {
-  color: grey; }
+.card__image {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: block; }
 
 .card__p {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 0.9em;
-  width: 280px;
-  line-height: 1.4;
-  color: #020202;
-  margin: 20px 0;
-  font-weight: bold; }
+  text-align: center;
+  padding-top: 0 8px;
+  max-width: fit-content; }
 
-.bg {
-  display: inline-block;
-  color: #fff;
-  background: cornflowerblue;
-  padding: 5px 10px;
-  border-radius: 50px;
-  font-size: .7em; }
+.price__card {
+  font-size: 26px;
+  text-align: center;
+  color: black; }
 
-.button {
-  width: fit-content;
-  height: fit-content;
-  margin-top: 10px; }
-  .button a {
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    font-size: 11px;
-    color: #111;
-    text-decoration: none;
-    padding: 10px 15px;
-    border: 1px solid #aaa;
-    font-weight: bold; }
-    .button a:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: -10px;
-      width: 0%;
-      background: #111;
-      height: 100%;
-      z-index: -1;
-      transition: width 0.3s ease-in-out;
-      transform: skew(-25deg);
-      transform-origin: right; }
-    .button a:hover {
-      color: #fff;
-      transition: all 0.5s ease; }
-      .button a:hover:after {
-        width: 150%;
-        left: -10px;
-        transform-origin: left; }
-    .button a:nth-of-type(1) {
-      border-radius: 50px 0 0 50px;
-      border-right: none; }
-    .button a:nth-of-type(2) {
-      border-radius: 0px 50px 50px 0; }
+.card__item__content {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; }
 
-.cart-icon {
-  padding-right: 8px; }
+.btn__amigu {
+  width: 100%;
+  cursor: pointer;
+  margin: 0 auto;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px; }
 
 /* BLOG */
 .blog {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-direction: row;
   padding: 6rem;
   align-items: center;
   justify-content: flex-end;
@@ -387,6 +343,20 @@ h1 {
   color: #111;
   display: flex;
   align-self: flex-end; }
+
+@media (max-width: 480px) {
+  .blog {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%; } }
+
+@media (max-width: 1000px) {
+  .cards__amigu .index__blog__info {
+    width: 45%; } }
+
+@media (max-width: 480px) {
+  .cards__amigu .index__blog__info {
+    width: 100%; } }
 
 .products__main {
   display: flex;
@@ -508,7 +478,7 @@ label .formulario__label {
   transition: 0.5s;
   z-index: 0; }
 
-.button__formulario, .btn, .btn__amigu {
+.button__formulario, .btn__amigu, .btn {
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -520,8 +490,8 @@ label .formulario__label {
   cursor: pointer;
   font-size: 16px;
   margin-top: 30px; }
-  .button__formulario:hover, .btn:hover, .btn__amigu:hover {
-    background-color: #F9F3EE;
+  .button__formulario:hover, .btn__amigu:hover, .btn:hover {
+    background-color: #97c4b867;
     transform: translateY(-3px);
     color: black; }
 
@@ -628,11 +598,6 @@ label .formulario__label {
 /* ROPA */
 /* LETRAS */
 /* AMIGURUMIS */
-body {
-  margin: 0;
-  font-family: "Hind Madurai", sans-serif;
-  font-size: 1.4em; }
-
 .title__card {
   text-align: center;
   font-size: 1.4em;
@@ -654,7 +619,6 @@ a {
   width: 20%;
   margin: 15px;
   box-sizing: border-box;
-  text-align: center;
   border-radius: 20px;
   cursor: pointer;
   padding-top: 10px;
@@ -673,11 +637,12 @@ a {
   margin: 0 auto;
   display: block; }
 
-p {
+.card__p {
   text-align: center;
-  padding-top: 0 8px; }
+  padding-top: 0 8px;
+  max-width: fit-content; }
 
-h6 {
+.price__card {
   font-size: 26px;
   text-align: center;
   color: black; }

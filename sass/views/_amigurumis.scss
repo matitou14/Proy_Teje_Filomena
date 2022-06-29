@@ -1,8 +1,6 @@
 /* AMIGURUMIS */
-body {
-margin: 0;
-@include font($font-general, $text-xsmall);
-}
+
+
 .title__card{
     text-align: center;
     font-size: $text-xsmall;
@@ -25,7 +23,6 @@ a{
     width: 20%;
     margin: 15px;
     box-sizing: border-box;
-    text-align: center;
     border-radius: 20px;
     cursor: pointer;
     padding-top: 10px;
@@ -45,11 +42,12 @@ a{
     display: block;
 
 }
-p{
+.card__p{
   text-align: center;
   padding-top: 0 8px;
+  max-width: fit-content;
 }
-h6 {
+.price__card{
     font-size: 26px;
     text-align: center;
     color:$color-text;
