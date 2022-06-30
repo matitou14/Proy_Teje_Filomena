@@ -3,7 +3,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-top: map-get($spacings , spacing-large);
+	padding-top: map-get($spacings , spacing-medium);
 	height: 100vh;
 }
 .contacto__header {
