@@ -3,14 +3,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-top: 100px;
+	padding-top: map-get($spacings , spacing-large);
 	height: 100vh;
 }
 .contacto__header {
 	font-family: "Hind Madurai", sans-serif;
 	font-weight: bold;
-	padding-top:map-get($spacings, $spacing-xsmall); 
-	padding-bottom:map-get($spacings, $spacing-xsmall);
+	padding-top:map-get($spacings, spacing-xsmall); 
+	padding-bottom:map-get($spacings, spacing-xsmall);
 }
 .formulario__contacto {
 	background-color: white;

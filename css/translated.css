@@ -385,7 +385,7 @@ a {
 .products__main {
   display: flex;
   flex-wrap: wrap;
-  grid-gap: 20px;
+  grid-gap: 15px;
   margin: 0 auto;
   justify-items: center;
   max-width: fit-content; }
@@ -441,12 +441,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 6rem;
   height: 100vh; }
 
 .contacto__header {
   font-family: "Hind Madurai", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
 
 .formulario__contacto {
   background-color: white;
