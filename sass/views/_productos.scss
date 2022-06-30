@@ -12,11 +12,11 @@
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	max-width: 100%;
-	gap: map map-get($spacings, $spacing-small);
+	gap:map-get($spacings, $spacing-xsmall);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .products__link {
-  @include sizes(400px, 400px);
+  @include sizes(250px, 250px);
 	border-radius: 4px;
 	margin: 0.5rem;
 	display: grid;
