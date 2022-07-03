@@ -97,7 +97,7 @@
 				background-color: #3b5998;
 			}
 		}
-		&.twitter {
+		&.instagram {
 			&:hover {
 				background: linear-gradient(45deg,
         #f09433 0%,
@@ -107,16 +107,7 @@
         #bc1888 100%);
 			}
 		}
-		&.linkedin {
-			&:hover {
-				background-color: #007bb6;
-			}
-		}
-		&.dribbble {
-			&:hover {
-				background-color: #ea4c89;
-			}
-		}
+		
 	}
 	&.size-sm {
 		a {
