@@ -1,6 +1,8 @@
 /* GORROS */
-.btn {
-    @extend .button__formulario;
-    max-width: 50%;
-    margin: 0 auto;
+.card__p{
+  text-align: center;
+  padding-top: 0 8px;
+  max-width: fit-content;
+  margin: 0 auto;
 }
+

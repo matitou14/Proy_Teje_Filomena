@@ -5,7 +5,9 @@
 	margin: 0 auto;
 	justify-items: center;
 	max-width: fit-content;
-	
+	padding-top: map-get($spacings, spacing-medium);
+	padding-bottom:map-get($spacings, spacing-large);
+
 	
 }
 .products__grid {
@@ -13,9 +15,8 @@
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	max-width: 100%;
-	gap:map-get($spacings, $spacing-xsmall);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	padding-bottom: map-get($spacings, $spacing-large);
+
 }
 .products__link {
   @include sizes(250px, 250px);

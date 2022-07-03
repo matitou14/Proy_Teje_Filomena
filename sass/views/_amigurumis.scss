@@ -1,83 +1,83 @@
 /* AMIGURUMIS */
-
-
-.title__card{
-    text-align: center;
-    font-size: $text-xsmall;
-    margin: 0;
-    padding-top: $spacing-medium;
+.title__card {
+	text-align: center;
+	font-size: $text-xsmall;
+	margin: 0;
+	padding-top: $spacing-medium;
 }
-a{
-    text-decoration: none;
+a {
+	text-decoration: none;
 }
-.gallery__amigu{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin:50px 0;
-
+.gallery__amigu {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0;
 }
-.cards__amigu{
-    width: 20%;
-    margin:map-get($spacings, spacing-xsmall);
-    box-sizing: border-box;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transition: .4s;
-    background: #f2f2f2;
-
+.cards__amigu {
+	width: 20%;
+	margin: map-get($spacings, spacing-xsmall);
+	box-sizing: border-box;
+	border-radius: 20px;
+	cursor: pointer;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transition: .4s;
+	background: #f2f2f2;
+	&:hover {
+		box-shadow: 0 03px 06px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.22);
+		transform: translate(0px, -8px);
+	}
 }
-.cards__amigu:hover{
-    box-shadow: 0 03px 06px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.22);
-    transform: translate(0px, -8px);
+.card__image {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
 }
-.card__image{
-    @include sizes(200px,200px);
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-
+.card__p {
+	text-align: center;
+	padding-top: 0 8px;
+	max-width: fit-content;
 }
-.card__p{
-  text-align: center;
-  padding-top: 0 8px;
-  max-width: fit-content;
+.price__card {
+	font-size: 26px;
+	text-align: center;
+	color: $color-text;
 }
-.price__card{
-    font-size: 26px;
-    text-align: center;
-    color:$color-text;
-}  
-.card__item__content{
-    list-style: none;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+.card__item__content {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
 }
-
-.btn__amigu{
-    width: 100%;
-    @extend .button__formulario;
-    cursor: pointer;
-    margin: 0 auto;
-    border-bottom-right-radius:20px;
-    border-bottom-left-radius:20px;
-
+.btn__amigu {
+	width: 100%;
+	cursor: pointer;
+	margin: 0 auto;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
 }
 
+
+
+@media (max-width: 480px){
+	.blog{
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 100%;
+	}
+
+}
 @media (max-width: 1000px){
-    .cards__amigu{
+    .cards__amigu .index__blog__info{ 
         width: 45%;
     }
 }
 @media (max-width: 480px){
-    .cards__amigu{
+    .cards__amigu .index__blog__info{
         width: 100%;
     }
     
 }
-    

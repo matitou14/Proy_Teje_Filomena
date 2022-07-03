@@ -388,7 +388,9 @@ a {
   grid-gap: 15px;
   margin: 0 auto;
   justify-items: center;
-  max-width: fit-content; }
+  max-width: fit-content;
+  padding-top: 2.4rem;
+  padding-bottom: 6rem; }
 
 .products__grid {
   display: grid;
@@ -501,7 +503,7 @@ label .formulario__label {
   transition: 0.5s;
   z-index: 0; }
 
-.button__formulario, .btn__amigu, .btn {
+.button__formulario, .btn__amigu {
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -513,7 +515,7 @@ label .formulario__label {
   cursor: pointer;
   font-size: 16px;
   margin-top: 30px; }
-  .button__formulario:hover, .btn__amigu:hover, .btn:hover {
+  .button__formulario:hover, .btn__amigu:hover {
     background-color: #97c4b867;
     transform: translateY(-3px);
     color: black; }
@@ -614,8 +616,10 @@ label .formulario__label {
   max-width: 100%; }
 
 /* GORROS */
-.btn {
-  max-width: 50%;
+.card__p {
+  text-align: center;
+  padding-top: 0 8px;
+  max-width: fit-content;
   margin: 0 auto; }
 
 /* ROPA */
@@ -647,14 +651,11 @@ a {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   transition: .4s;
   background: #f2f2f2; }
-
-.cards__amigu:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.22);
-  transform: translate(0px, -8px); }
+  .cards__amigu:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.22);
+    transform: translate(0px, -8px); }
 
 .card__image {
-  width: 200px;
-  height: 200px;
   text-align: center;
   margin: 0 auto;
   display: block; }
@@ -683,12 +684,18 @@ a {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px; }
 
+@media (max-width: 480px) {
+  .blog {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%; } }
+
 @media (max-width: 1000px) {
-  .cards__amigu {
+  .cards__amigu .index__blog__info {
     width: 45%; } }
 
 @media (max-width: 480px) {
-  .cards__amigu {
+  .cards__amigu .index__blog__info {
     width: 100%; } }
 
 /* MEDIA QUERIES */
