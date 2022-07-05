@@ -39,7 +39,11 @@ a {
 	text-align: center;
 	padding-top: 0 8px;
 	max-width: fit-content;
+ 	margin: 0 auto;
+	  
 }
+
+
 .price__card {
 	font-size: 26px;
 	text-align: center;
@@ -53,9 +57,11 @@ a {
 	padding: 0;
 }
 .btn__amigu {
-	width: 100%;
+	@extend .button__formulario;
+	display: flex;
+	align-items: center;
+	width: 100%; 
 	cursor: pointer;
-	margin: 0 auto;
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 }

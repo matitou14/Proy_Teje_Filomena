@@ -107,7 +107,8 @@ nav {
 
 .column#zoomIn:hover img {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  filter: drop-shadow(5px 5px 1px #b8b8b8); }
 
 figure {
   display: flex;
@@ -116,8 +117,7 @@ figure {
 .img__logo {
   margin-top: 30px;
   width: 150px;
-  height: 150px;
-  filter: drop-shadow(5px 5px 1px #b8b8b8); }
+  height: 150px; }
 
 .menu {
   list-style-type: none;
@@ -616,12 +616,6 @@ label .formulario__label {
   max-width: 100%; }
 
 /* GORROS */
-.card__p {
-  text-align: center;
-  padding-top: 0 8px;
-  max-width: fit-content;
-  margin: 0 auto; }
-
 /* ROPA */
 /* LETRAS */
 /* AMIGURUMIS */
@@ -663,7 +657,8 @@ a {
 .card__p {
   text-align: center;
   padding-top: 0 8px;
-  max-width: fit-content; }
+  max-width: fit-content;
+  margin: 0 auto; }
 
 .price__card {
   font-size: 26px;
@@ -678,9 +673,10 @@ a {
   padding: 0; }
 
 .btn__amigu {
+  display: flex;
+  align-items: center;
   width: 100%;
   cursor: pointer;
-  margin: 0 auto;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px; }
 
