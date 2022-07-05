@@ -28,8 +28,9 @@
 .contacto__container {
 	position: relative;
 	height: 45px;
-	width: 90%;
-	margin-bottom: 17px;
+	width:90%;
+	margin-bottom: 17px;	
+	
 }
 .formulario__box {
 	position: absolute;
@@ -37,26 +38,15 @@
 	left: 0px;
 	height: 100%;
 	width: 100%;
-	border: 1px solid #DADCE0;
+	border: 2px solid #DADCE0;
 	border-radius: 7px;
 	font-size: 16px;
 	padding: 0 20px;
 	outline: none;
 	background: none;
-	z-index: 1;
-	&:focus {
-		& + .formulario__label {
-			top: -7px;
-			left: 3px;
-			z-index: 10;
-			font-size: 14px;
-			font-weight: 600;
-			color: #97C4B8;
-		}
-	}
+	z-index: 1;	
 }
-label {
-	.formulario__label {
+.formulario__label {
 		position: absolute;
 		top: 15px;
 		left: 15px;
@@ -66,11 +56,21 @@ label {
 		font-size: 16px;
 		transition: 0.5s;
 		z-index: 0;
-	}
 }
+.formulario__box__text{
+	position: absolute;
+		top: 10px;
+		left: 4px;
+		padding: 0 4px;
+		background-color: white;
+		color: #DADCE0;
+		font-size: 16px;
+		transition: 0.5s;
+		z-index: 0;
+		border-radius: 7px;		
+}
+
 .button__formulario {
-	display: flex;
-  flex-direction: column;
 	margin-left: auto;
 	padding: 15px 30px;
 	border: none;
@@ -80,9 +80,33 @@ label {
 	cursor: pointer;
 	font-size: 16px;
 	margin-top: 30px;
+	text-align: center;
 	&:hover {
 		background-color: #97c4b867;
-		transform: translateY(-3px);
+		transform: translateY(-2px);
 		color: black;
+	}
+}
+.formulario__box {
+	&:focus {
+		border: 1px solid #97C4B8;
+		& + .formulario__label {
+			top: -7px;
+			left: 3px;
+			z-index: 10;
+			font-size: 14px;
+			font-weight: 600;
+			color: #97C4B8;
+		}
+	}
+	&:not(:placeholder-shown) {
+		& + .formulario__label {
+			top: -7px;
+			left: 3px;
+			z-index: 10;
+			font-size: 14px;
+			font-weight: 600;
+			color: #97C4B8;
+		}
 	}
 }

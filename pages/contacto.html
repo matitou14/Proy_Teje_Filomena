@@ -31,14 +31,14 @@
     <header>
         <picture>    
             <a href="../index.html" class="column col-xs-6" id="zoomIn">
-                <figure><img class="img__logo" src="../IMG/Fondo/Logo 1sf.png" alt="logo"></figure>
+                <figure><img class="img__logo" alt="logo" src="../IMG/Fondo/Logo 1sf.png" alt="logo"></figure>
             </a>
         </picture>    
             <div class="header__elements">
                 <a href="./registrate.html">
                     <img class="header__icon" src="../Iconos svg/user.svg" alt="user">
                 </a>
-                <a href="./pages/carrito.html">
+                <a href="./cart.html">
                     <img class="header__icon" src="../Iconos svg/cart.svg" alt="cart">
                 </a>
             </div>
@@ -69,21 +69,19 @@
             <form class="formulario__contacto" action="" method="post" enctype="multipart/form-data">
                 <h2 class="formulario__titulo">Contactanos</h2>
                 <div class="contacto__container">
-                    <label class="formulario__label__mail" for="Correo"> Email </label> </label>
                     <input class="formulario__box" type="email" name="Correo" placeholder="a">
+                    <label class="formulario__label" for="Correo"> Email </label> </label>
                 </div>
-                <br>
-                <br>
+                
                 <div class="contacto__container">
-                    <label class="formulario__label" for="Nro de telefono"> Numero de telefono </label>
                     <input class="formulario__box" type="tel" name="Nro de telefono" placeholder="a">
+                    <label class="formulario__label" for="Nro de telefono"> Numero de telefono </label>
                 </div>
-                <br>
-                <br>
-                <div class= "contacto__container" > <textarea class="formulario__box__text" name="Contacto" id="" cols="40" rows=5
-                        placeholder="a"></textarea> 
+               
+                <div class="contacto__container" > 
+                    <textarea class="formulario__box__text" name="Contacto" id="" cols="35" rows=2 placeholder="a"></textarea> 
                 </div>
-                <br>
+            
                 <input class="button__formulario" type="submit" name="Enviar" id="">
                 <input class="button__formulario" type="reset" name="Borrar Formulario">
             </form>

@@ -56,8 +56,7 @@ a {
 	align-items: center;
 	padding: 0;
 }
-.btn__amigu {
-	@extend .button__formulario;
+button  .btn__amigu {
 	display: flex;
 	align-items: center;
 	width: 100%; 

@@ -400,8 +400,8 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
 .products__link {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 4px;
   margin: 0.5rem;
   display: grid;
@@ -438,6 +438,22 @@ a {
   opacity: 1; }
 
 /* APRENDE CROCHET */
+.section__description {
+  padding-left: 1rem; }
+
+.section__subtitle {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.4em; }
+
+.section__item__title {
+  text-align: center; }
+
+.section__video {
+  padding-left: 1rem; }
+
+.section__item {
+  padding-bottom: 1rem; }
+
 /* CONTACTO */
 .contacto__contenedor {
   display: flex;
@@ -477,22 +493,15 @@ a {
   left: 0px;
   height: 100%;
   width: 100%;
-  border: 1px solid #DADCE0;
+  border: 2px solid #DADCE0;
   border-radius: 7px;
   font-size: 16px;
   padding: 0 20px;
   outline: none;
   background: none;
   z-index: 1; }
-  .formulario__box:focus + .formulario__label {
-    top: -7px;
-    left: 3px;
-    z-index: 10;
-    font-size: 14px;
-    font-weight: 600;
-    color: #97C4B8; }
 
-label .formulario__label {
+.formulario__label {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -503,9 +512,19 @@ label .formulario__label {
   transition: 0.5s;
   z-index: 0; }
 
+.formulario__box__text {
+  position: absolute;
+  top: 10px;
+  left: 4px;
+  padding: 0 4px;
+  background-color: white;
+  color: #DADCE0;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+  border-radius: 7px; }
+
 .button__formulario, .btn__amigu {
-  display: flex;
-  flex-direction: column;
   margin-left: auto;
   padding: 15px 30px;
   border: none;
@@ -514,11 +533,30 @@ label .formulario__label {
   border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
-  margin-top: 30px; }
+  margin-top: 30px;
+  text-align: center; }
   .button__formulario:hover, .btn__amigu:hover {
     background-color: #97c4b867;
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     color: black; }
+
+.formulario__box:focus {
+  border: 1px solid #97C4B8; }
+  .formulario__box:focus + .formulario__label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: #97C4B8; }
+
+.formulario__box:not(:placeholder-shown) + .formulario__label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: #97C4B8; }
 
 /* REGISTRATE */
 .formulario__registro {
@@ -672,7 +710,7 @@ a {
   align-items: center;
   padding: 0; }
 
-.btn__amigu {
+button .btn__amigu {
   display: flex;
   align-items: center;
   width: 100%;
