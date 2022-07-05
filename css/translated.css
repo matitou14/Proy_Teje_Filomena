@@ -443,7 +443,7 @@ a {
 
 .section__video {
   display: grid;
-  grid-template-columns: minmax(20px, 1fr);
+  grid-template-columns: minmax(200px, 1fr);
   grid-gap: 5px;
   justify-items: center;
   padding-left: 1rem; }
