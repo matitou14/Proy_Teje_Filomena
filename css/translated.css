@@ -441,18 +441,18 @@ a {
 .section__description {
   padding-left: 1rem; }
 
-.section__subtitle {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 1.4em; }
-
-.section__item__title {
-  text-align: center; }
-
 .section__video {
+  display: grid;
+  grid-template-columns: minmax(20px, 1fr);
+  grid-gap: 5px;
+  justify-items: center;
   padding-left: 1rem; }
 
 .section__item {
   padding-bottom: 1rem; }
+
+.section__item__title {
+  text-align: center; }
 
 /* CONTACTO */
 .contacto__contenedor {
