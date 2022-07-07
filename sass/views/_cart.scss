@@ -1,0 +1,23 @@
+.checkout__section{
+    background-color: $color-background;
+}
+.cart__image2{
+ position: relative;
+ left: 40px;
+ bottom: 15px;
+ &:hover{
+    /*transform: translate(0px, -8px)*/
+    -webkit-transform: scale(1.1);
+			transform: scale(1.4);
+ }
+}
+.cart__image3{
+    position: relative;
+    left: 25px;
+    bottom: 15px;
+    &:hover{
+       /*transform: translate(0px, -8px)*/
+       -webkit-transform: scale(1.1);
+               transform: scale(1.4);
+    }
+   }
