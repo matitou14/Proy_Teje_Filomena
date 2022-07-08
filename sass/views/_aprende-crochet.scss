@@ -1,10 +1,13 @@
 /* APRENDE CROCHET */
 .section__description {
 	padding-left: map-get($spacings , spacing-xsmall);
+
+
 }
 .section__video {
 	display: grid;
-	grid-template-columns: minmax(200px, 1fr);
+	grid-template-columns: (2 , 1fr);
+	grid-template-rows: (2, 1fr);
 	grid-gap: 5px;
 	justify-items: center;
 	padding-left: map-get($spacings , spacing-xsmall);
