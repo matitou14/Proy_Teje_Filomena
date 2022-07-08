@@ -752,14 +752,14 @@ button .btn__amigu {
     width: 100%; } }
 
 .checkout__section {
-  background-color: #F9F3EE; }
+  background-color: #F9F3EE;
+  text-align: center; }
 
 .cart__image2 {
   position: relative;
   left: 40px;
   bottom: 15px; }
   .cart__image2:hover {
-    /*transform: translate(0px, -8px)*/
     -webkit-transform: scale(1.1);
     transform: scale(1.4); }
 
@@ -768,9 +768,11 @@ button .btn__amigu {
   left: 25px;
   bottom: 15px; }
   .cart__image3:hover {
-    /*transform: translate(0px, -8px)*/
     -webkit-transform: scale(1.1);
     transform: scale(1.4); }
+
+.form__check__type {
+  text-align: left; }
 
 /* MEDIA QUERIES */
 /* MEDIA QUERIES*/

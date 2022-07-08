@@ -66,7 +66,7 @@
                     <h2>Carrito de Teje Filomena</h2>
                     <p class="lead">Completa los datos a continuación</p>
                   </div>
-                   <div class="row g-5">
+                   <div class="row g-6">
                     <div class="col-md-5 col-lg-4 order-md-last">
                       <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-primary">Tu carrito</span>
@@ -105,7 +105,7 @@
                           <span class="text-success">−$1500</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
-                          <span>Total (ARS))</span>
+                          <span>Total (ARS)</span>
                           <strong>$6000</strong>
                         </li>
                       </ul>
@@ -137,7 +137,7 @@
                             </div>
                           </div>
               
-                          <div class="col-12">
+                          <div class="col-6">
                             <label for="username" class="form-label">Usuario</label>
                             <div class="input-group has-validation">
                               <span class="input-group-text">@</span>
@@ -148,15 +148,15 @@
                             </div>
                           </div>
               
-                          <div class="col-12">
-                            <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                          <div class="col-6">
+                            <label for="email" class="form-label">Email <span class="text-muted"></span></label>
                             <input type="email" class="form-control" id="email" placeholder="ejemplo@google.com">
                             <div class="invalid-feedback">
                               Por favor ingrese una direccion válida de mail
                             </div>
                           </div>
               
-                          <div class="col-12">
+                          <div class="col-6">
                             <label for="address" class="form-label">Dirección</label>
                             <input type="text" class="form-control" id="address" placeholder="Av Siempre viva 123" required>
                             <div class="invalid-feedback">
@@ -164,12 +164,12 @@
                             </div>
                           </div>
               
-                          <div class="col-12">
-                            <label for="address2" class="form-label">Dirección secundaria <span class="text-muted">(Opcional)</span></label>
-                            <input type="text" class="form-control" id="address2" placeholder="Departamento o casa">
+                          <div class="col-6">
+                            <label for="address2" class="form-label">Aclaracion <span class="text-muted"></span></label>
+                            <input type="text" class="form-control" id="address2" placeholder="Departamento, piso, número">
                           </div>
               
-                          <div class="col-md-5">
+                          <div class="col-md-2">
                             <label for="country" class="form-label">País</label>
                             <select class="form-select" id="country" required>
                               <option value="">Elija</option>
@@ -182,7 +182,7 @@
                             </div>
                           </div>
               
-                          <div class="col-md-4">
+                          <div class="col-md-2">
                             <label for="state" class="form-label">Provincia</label>
                             <select class="form-select" id="state" required>
                               <option value="">Elija</option>
@@ -197,7 +197,7 @@
                             </div>
                           </div>
               
-                          <div class="col-md-3">
+                          <div class="col-md-2">
                             <label for="zip" class="form-label">Código Postal</label>
                             <input type="text" class="form-control" id="zip" placeholder="" required>
                             <div class="invalid-feedback">
@@ -208,12 +208,12 @@
               
                         <hr class="my-4">
               
-                        <div class="form-check">
+                        <div class="form__check__type">
                           <input type="checkbox" class="form-check-input" id="same-address">
                           <label class="form-check-label" for="same-address">La dirección de envío es la misma que la de facturación</label>
                         </div>
               
-                        <div class="form-check">
+                        <div class="form__check__type">
                           <input type="checkbox" class="form-check-input" id="save-info">
                           <label class="form-check-label" for="save-info">Guardar mi información para futuras compras </label>
                         </div>
@@ -223,15 +223,15 @@
                         <h4 class="mb-3">Pago</h4>
               
                         <div class="my-3">
-                          <div class="form-check">
+                          <div class="form__check__type">
                             <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
                             <label class="form-check-label" for="credit">Tarjeta de crédito</label>
                           </div>
-                          <div class="form-check">
+                          <div class="form__check__type">
                             <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
                             <label class="form-check-label" for="debit">Débito</label>
                           </div>
-                          <div class="form-check">
+                          <div class="form__check__type">
                             <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
                             <label class="form-check-label" for="paypal">PayPal</label>
                           </div>
@@ -248,14 +248,14 @@
                           </div>
               
                           <div class="col-md-6">
-                            <label for="cc-number" class="form-label">Numero de tarjeta de crédito</label>
+                            <label for="cc-number" class="form-label">Número de tarjeta de crédito</label>
                             <input type="text" class="form-control" id="cc-number" placeholder="" required>
                             <div class="invalid-feedback">
                               El número es requerido
                             </div>
                           </div>
               
-                          <div class="col-md-3">
+                          <div class="col-md-2">
                             <label for="cc-expiration" class="form-label">Vencimiento</label>
                             <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
                             <div class="invalid-feedback">
@@ -264,7 +264,7 @@
                           </div>
               
                           <div class="col-md-3">
-                            <label for="cc-cvv" class="form-label">Código de seguridad</label>
+                            <label for="cc-cvv" class="form-label">Codigo seguridad</label>
                             <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
                             <div class="invalid-feedback">
                               Es requerido que ingrese su número de seguridad.
