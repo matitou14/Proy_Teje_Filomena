@@ -380,7 +380,7 @@ a {
   border-radius: 10px; }
 
 .index__gallery img:hover {
-  flex: 2; }
+  flex: 1.5; }
 
 .products__main {
   display: flex;
@@ -754,7 +754,8 @@ button .btn__amigu {
 
 .checkout__section {
   background-color: #F9F3EE;
-  text-align: center; }
+  text-align: center;
+  padding: 2.4rem; }
 
 .cart__image2 {
   position: relative;
