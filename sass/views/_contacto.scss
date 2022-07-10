@@ -5,6 +5,7 @@
 	align-items: center;
 	padding-top: map-get($spacings , spacing-medium);
 	height: 100vh;
+	padding: $spacing-medium;
 }
 .contacto__header {
 	font-family: "Hind Madurai", sans-serif;

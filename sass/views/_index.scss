@@ -86,6 +86,8 @@ a{
 	align-items: center;
 	justify-content: flex-end;
 	max-width: 100%;
+   
+   
 }
 .index__blog__img {
 	flex: 1 1 50%;
@@ -134,6 +136,7 @@ a{
     align-items: center;
     justify-content: center;
     padding-left: $spacing-medium;
+    padding-bottom: map-get($spacings, spacing-large);
 
 }
 .index__gallery img{

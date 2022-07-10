@@ -1,19 +1,20 @@
 /* APRENDE CROCHET */
+.body__tut{
+	display: grid;
+}
 .section__description {
 	padding-left: map-get($spacings , spacing-xsmall);
-
-
 }
-.section__video {
+.section__vidr{
 	display: grid;
-	grid-template-columns: (2 , 1fr);
-	grid-template-rows: (2, 1fr);
-	grid-gap: 5px;
-	justify-items: center;
-	padding-left: map-get($spacings , spacing-xsmall);
+	grid-template-columns: repeat(2, 1fr)													;
+
 }
 .section__item {
+	
 	padding-bottom: map-get($spacings , spacing-xsmall);
+	
+	
 }
 .section__item__title {
 	text-align: center;
