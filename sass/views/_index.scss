@@ -134,8 +134,7 @@ a{
     display: flex;
     gap:5px;   
     align-items: center;
-    justify-content: center;
-    padding-left: $spacing-medium;
+    padding-left: $spacing-large;
     padding-bottom: map-get($spacings, spacing-large);
 
 }

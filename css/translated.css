@@ -367,8 +367,7 @@ a {
   display: flex;
   gap: 5px;
   align-items: center;
-  justify-content: center;
-  padding-left: 2.4rem;
+  padding-left: 6rem;
   padding-bottom: 6rem; }
 
 .index__gallery img {
@@ -776,9 +775,8 @@ button .btn__amigu {
   .cart__image3:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.4); }
-
-.form__check__type {
-  text-align: left; }
+  .cart__image3 .form__check__type {
+    text-align: left; }
 
 /* MEDIA QUERIES */
 /* MEDIA QUERIES*/
